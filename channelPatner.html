@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IKIGAI CITY - Anuktha Avenues</title>
+    <link rel="stylesheet" href="./channelPatner.css" />
+
+    <script>
+      window.onload = () => {
+        // Get the buttons
+        const button1 = document.getElementById("button1");
+        const button2 = document.getElementById("button2");
+        const para=document.getElementById("para");
+
+        // Initially hide button2
+        button2.style.display = "none";
+        para.style.display="none";
+
+        // Add event listener to button1
+        button1.addEventListener("click", () => {
+          // Show button2 after button1 is clicked
+          button2.style.display = "block";
+          button1.style.display="none"
+          para.style.display="block"
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="logo">
+        <img src="./images/untitled_design.png" width="100" height="80" />
+      </div>
+      <nav class="navbar">
+        <a href="channelPatner.html">Channel Partner</a>
+        <!-- <a href="#contact">Contact Us</a> -->
+      </nav>
+    </header>
+    <img
+      src="./images/Screenshot 2024-09-07 101701.png"
+      width="100%"
+      height="100%"
+      style="margin-top: -5px"
+    />
+    <img
+      src="./images/Screenshot 2024-09-07 101736.png"
+      width="100%"
+      height="100%"
+      style="margin-top: -5px"
+    />
+    <div style="margin: auto">
+      <p style="text-align: center">
+        <a
+          style="color: red",
+          target="_blank"
+          href="https://drive.google.com/file/d/1oGLy-dEknW7iFRRXaPqaV9mi4-TkBInH/view?usp=drivesdk"
+          >Click Here</a
+        >
+        to view Channel Partner Agreement
+      </p>
+      <p id="para" style="margin: auto;text-align: center;margin: 10px;">Click below to proceed with channel partner registration.</p>
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+        "
+      >
+        <!-- Approve Button -->
+        <button id="button1" class="button button1 active">Approve Aggrement</button>
+        <!-- Register Button (Initially Hidden) -->
+        <button
+          id="button2"
+          class="button button2"
+          onclick="location.href='registration.html'"
+        >
+          Register
+        </button>
+      </div>
+    </div>
+    <img
+      id="contact"
+      src="./images/Screenshot 2024-09-07 101753.png"
+      width="100%"
+      height="100%"
+      style="margin-top: -5px"
+    />
+  </body>
+</html>

@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111483;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.header .logo {
+  color: #111483;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 2px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: #fff;
+  background-color: #111483;
+  padding: 10px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #111483;
+}
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.left-section {
+  background-color: #ffeb3b;
+  padding: 20px;
+  width: 50%;
+}
+
+.left-section h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.left-section p {
+  margin: 10px 0;
+}
+
+.right-section {
+  text-align: center;
+  width: 50%;
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-section h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.right-section p {
+  margin: 5px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    padding: 6px 12px;
+    font-size: small;
+  }
+}

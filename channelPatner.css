@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111483;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+
+.header .logo {
+  color: #111483;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  gap: 2px;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: #fff;
+  background-color: #111483;
+  padding: 10px 15px;
+  margin-left: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+  color: #111483;
+}
+
+.button {
+  background-color: #c6df34;
+  color: rgb(18, 8, 8);
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  /* width: 50px; */
+  cursor: pointer;
+  font-size: 16px;
+  /* margin: auto; */
+  text-align: center;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    padding: 6px 12px;
+    font-size: small;
+  }
+}
